@@ -1,0 +1,134 @@
+* {
+    text-decoration: none;
+    list-style: none; 
+}
+
+header {
+    position: fixed;
+    background: #fff;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 0 50px;
+    z-index: 10;
+    border-color: rgba(129, 129, 129, 0.2);
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+}
+header .logo {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-left: 10px;
+    padding-top: 30px;
+}
+header img {
+    vertical-align: unset;
+}
+header nav {
+    padding-top: 30px;
+}
+header nav ul {
+    display: flex;
+}
+header nav>ul>li>a {
+    display: inline-block;
+    color: #000;
+    padding: 5px 0;
+    margin: 0 10px;
+    border: 3px solid transparent;
+    text-transform: uppercase;
+    transition: 0.2s;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    border-bottom-color: dodgerblue;
+    transition: all;
+   
+}
+.nav_check {
+    cursor: pointer;
+    display: none;
+}
+.nav_check div {
+    width: 30px;
+    height: 3px;
+    margin: 5px 4px;
+    background: var(--primary-color);
+    vertical-align: middle;
+    border-radius: 10px;
+}
+/*Reponsive navbar*/
+@media (max-width : 1000px) {
+    
+        .nav_check {
+            display: block;
+            transform: translateY(32%);
+            width: 40px;
+            height: 40px;
+            margin-left: -110%;
+
+        } 
+    header nav {
+        position: absolute;
+        width: 100%;
+        left: -100%;
+        top: 70px;
+        background: #fff;
+        padding: 40px 30px 30px 30px;
+        transition: 0.3s;
+    }
+    header #nav_check:checked ~ nav {
+        left: 0;
+        transition: all;
+    }
+    header nav ul {
+        display: block;
+    }
+    header nav ul li a {
+        margin: 5px 0;
+    }
+  
+    .navbar-icon ul li:nth-child(3) {
+        display: none;
+    }
+    .navbar-icon ul li:nth-child(4) {
+        display: none;
+    }
+}
+@media (max-width : 550px) {
+    .nav_check {
+        display: block;
+        transform: translateY(10%);
+        width: 40px;
+        height: 40px;
+        margin-left: -120%;
+
+    } 
+}
+
+/*Css icon*/
+.navbar-icon {
+    padding-top: 30px;
+
+}
+.navbar-icon ul {
+    display: inline-block;
+}
+
+.navbar-icon ul li {
+    margin-right: 20px;
+    font-size: 22px;
+}
+
+.navbar-icon ul li a {
+    color: var(--bg-icon);
+}
+.header-bottom-line {
+    position: fixed;
+    height: 50px;
+    z-index: 10;
+}

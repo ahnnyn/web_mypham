@@ -1,0 +1,45 @@
+.carousel-control-prev {
+    color: black;
+}
+
+#carouselExampleInterval {
+    padding-top: 64px;
+} 
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    background-color: var(--bg-color);
+}
+.carousel-indicators  button {
+    border-radius: 50%;
+    
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    display: block;
+    z-index: 1;
+    width: 58px;
+    height: 58px;
+    top: 50%;
+    margin-top: -29px;
+    padding: 0;
+    cursor: pointer;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--bg-color);
+}
+
+.carousel-control-prev {
+    margin-left: 50px;
+}
+.carousel-control-next {
+    margin-right: 50px;
+
+}

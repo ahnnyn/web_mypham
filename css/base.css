@@ -1,0 +1,24 @@
+:root {
+    --primary-color:linear-gradient(259.36deg,#57adf4 5.13%,#0d74c5 80.5%);
+    --bg-color: #c6e5f9;
+    --btn-color :#4477BD;
+    --color-black : black;
+    --color-white : white;
+    --font-size-menu : 16px;
+    --font-weight-menu : 400; 
+    --bg-icon :#79a3dc;
+    --best-color : #d63b60;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a , li {
+    text-decoration: none;
+    list-style: none;
+}

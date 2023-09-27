@@ -1,0 +1,31 @@
+.pagebuilder-column >  img{
+    width: 590px;
+    height: 700px;
+    object-fit: cover;
+}
+
+.pagebuilder-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sample-btn {
+    width: 160px;
+    height: 40px;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+
+.sample-btn a  {
+    color: var(--color-black);
+}
+.sample-btn:hover {
+    background: #4477be;
+    border: 1px solid #4477be;
+}
+.sample-btn:hover a  {
+    color: #fff;
+    
+    
+}

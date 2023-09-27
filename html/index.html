@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar using HTML & CSS</title>
+    <!-- Bootstrap-->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
+    <!-- Thư viên dùng icon-->
+
+    <link rel="stylesheet" href="../font/fontawesome-free-5.15.4/css/all.min.css">
+    <!-- Thư viện dùng làm card product item home-->
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+    <script src="../lib/swiper-bundle-js.min.js"></script>
+    
+    <!-- Các thẻ css-->
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/carousel.css">
+    <link rel="stylesheet" href="../css/sample.css">
+    <link rel="stylesheet" href="../css/homeProductItem.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/megamenu.css">
+
+</head>
+<body>
+    <div class="app">
+            <!--Header -->
+            <header>
+                <div class="logo">
+                    <img src="../image/logo-header/logo.svg" title="" alt="logo" width="122" height="33">
+                </div>
+                <input type="checkbox" id="nav_check" hidden>
+                <nav class="navigation">
+                    <ul>
+                        <li>
+                            <a id = "nav_items" href="">VỀ LANEIGE</a>
+                            <div class="mega-menu">
+                                <div class="mega-menu-items">
+                                    <ul>
+                                        <li><a href="#">Câu chuyện thương hiệu</a></li>
+                                        <li><a href="#">Limited</a></li>
+                                        <li><a href="#">Tất cả sản phẩm</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                        </li>
+                        <li>
+                            <a href="">CHĂM SÓC DA</a>
+                            <div class="mega-menu2">
+                                <div class="mega-menu2-items">
+                                    <a class="mega-menu2-items-all" href="#">Tất cả</a>
+                                    <ul>
+                                        <li>
+                                            <ul class="mega-menu2-items-sub">
+                                                <li><a class = "mega-menu2-items-list" href="#">Danh mục</a></li>
+                                                <li><a href="#">Tất cả sản phẩm</a></li>
+                                                <li><a href="#">Tẩy trang</a></li>
+                                                <li><a href="#">Kem chống nắng</a></li>
+                                                <li><a href="#">Sửa rửa mặt</a></li>
+                                                <li><a href="#">Nước cân bằng</a></li>
+                                                <li><a href="#">Sữa dưỡng</a></li>
+                                                <li><a href="#">Tinh chất</a></li>
+                                                <li><a href="#">Kem dưỡng</a></li>
+                                                <li><a href="#">Mặt nạ</a></li>
+                                                <li><a href="#">Dưỡng mắt</a></li>
+                                                <li><a href="#">Dưỡng môi</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li>
+                                            <ul class="mega-menu2-items-sub">
+                                                <li><a class = "mega-menu2-items-list" href="#">Nhu cầu da</a></li>
+                                                <li><a href="">Tất cả sản phẩm</a></li>
+                                                <li><a href="">Làm sạch</a></li>
+                                                <li><a href="">Retinol</a></li>
+                                                <li><a href="">Vitamin C</a></li>
+                                                <li><a href="">Dưỡng ẩm</a></li>
+                                                <li><a href="">Ngăn ngừa lão hóa</a></li>
+                                                <li><a href="">Dưỡng sáng mờ thâm</a></li>
+                                                <li><a href="">Phục hồi</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li>
+                                            <ul class="mega-menu2-items-sub">
+                                                <li><a class = "mega-menu2-items-list" href="#">Dòng sản phẩm</a></li>
+                                                <li><a href="">Tất cả sản phẩm</a></li>
+                                                <li><a href="">Perfect Renew</a></li>
+                                                <li><a href="">Water bank</a></li>
+                                                <li><a href="">Radian C</a></li>
+                                                <li><a href="">Sleeping Mask</a></li>
+                                                <li><a href="">Phyto Alexin</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li>
+                                            <img src="../image/nav_hover/Editorial_cream_oily_1__1.png" alt="">
+                                            <br>
+                                            <strong>BEST SELLER</strong>
+                                            
+                                            <p>
+                                                Kem Dưỡng Ẩm Dành Cho Da <br>
+                                                Dầu Và Da Hỗn Hợp Laneige <br>
+                                                Water Bank Blue HA Cream
+                                            </p>
+
+                                            <a href="#">
+                                                <strong>XEM THÊM</strong>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="">TRANG ĐIỂM</a>
+                            <div class="mega-menu2">
+                                <div class="mega-menu2-items">
+                                    <a class="mega-menu2-items-all" href="#">Tất cả</a>
+                                    <ul>
+
+                                        <li>
+                                            <ul class="mega-menu2-items-sub">
+                                            </ul>
+                                        </li>
+
+                                        <li>
+                                            <ul class="mega-menu2-items-sub">
+                                                <li><a class = "mega-menu2-items-list" href="#">Trang điểm mặt</a></li>
+                                                <li><a href="#">Tất cả sản phẩm</a></li>
+                                                <li><a href="#">Kem lót</a></li>
+                                                <li><a href="#">Kem nền</a></li>
+                                                <li><a href="#">Phấn nước</a></li>
+                                                <li><a href="#">Phấn phủ</a></li>
+                                            </ul>
+                                        </li>
+
+                                        
+                                        <li>
+                                            <img src="../image/nav_hover/220424_final_new_neo_mett_PDP_thumbnail_05_11_1_.png" alt="">
+                                            <br>
+                                            <strong>MỚI RA MẮT</strong>
+                                            
+                                            <p>
+                                                Phấn Nước NEO Cushion Matte
+                                            </p>
+
+                                            <a href="#">
+                                                <strong>XEM THÊM</strong>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="">THÀNH VIÊN THỰC HIỆN</a>
+                        </li>
+                        <li>
+                            <a href="">SỰ KIỆN </a>
+                        </li>
+                        <li>
+                            <a href="">LIÊN HỆ</a>
+                        </li>
+                    </ul>
+                </nav>
+                <label for="nav_check" class="nav_check">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </label>
+                <div class="navbar-icon">
+                   <ul class="d-flex">
+                        <li>
+                            <a href="../html/indexSignIn.html">
+                                <i class="far fa-user"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fas fa-map-pin"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fas fa-search"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fas fa-shopping-cart"></i>
+                            </a>
+                        </li>
+                   </ul>
+                  </div>
+            </header>
+           <div class="header-bottom-line d-flex justify-content-between pt-5">
+            <hr style="width: 25%; height: 10px;">
+            <hr style="width: 25%; float: right;">
+           </div>
+            
+           <!--Carousel dùng bootstrap -->
+           <div  id="carouselExampleInterval" class="carousel slide mt-0" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button data-bs-target="#carouselExampleInterval" data-bs-slide-to="0" class="active"></button>
+                    <button data-bs-target="#carouselExampleInterval" data-bs-slide-to="1"></button>
+                    <button data-bs-target="#carouselExampleInterval" data-bs-slide-to="2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="5000">
+                        <img src="../image/carousel/web_PC-scaled.jpg" alt="..." class="d-block w-100">
+                       
+                    </div>
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <img src="../image/carousel/Web-PC-min.png" alt="..." class="d-block w-100">
+                       
+                    </div>
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <img src="../image/carousel/Banner-1-PC.png" alt="..." class="d-block w-100">
+                        
+                    </div>
+                </div>
+                <button class="carousel-control-prev" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+
+               
+         </div>
+
+         <!-- pagebuilder -->
+         <div class="container text-center mt-3">
+                <div class="row pagebuilder-column-group">
+                <div class="pagebuilder-column col-6">
+                        <img src="../image/sample/220424_final_new_neo_mett_PDP_thumbnail_05_11_2_.webp" alt="...">
+                </div>
+                
+                <div class="pagebuilder-column pagebuilder-content col-6">
+                    <p>
+                        <h5>NEO Cushion phiên bản cải tiến</h5>
+                    </p>
+
+                    <small>Phấn nước siêu mỏng nhẹ giúp hoàn thiện lớp makeup hoàn hảo giữ tone kéo dài đến 50</small>
+                    <small>giờ chỉ với 1 lần chạm</small><br>
+
+                    <button type="button" class="btn sample-btn">
+                        <a class="pagebuilder-button-secondary" target="" data-link-type="default" data-element="link" data-pb-style="F8WUBF9" style="min-width: 144px;">
+                            <span data-element="link_text">Khám phá ngay</span></a>
+                    </button>
+                </div>
+                </div>
+
+                 <hr style="width: 100%; margin-left: 24px;">
+
+                <div class="row pagebuilder-column-group">
+                    <div class="pagebuilder-column col-6">
+                        <img src="../image/sample/Social_Post-01.webp" alt="...">
+                    </div>
+                
+                    <div class="pagebuilder-column pagebuilder-content col-6">
+                        <p>
+                        <h5>NEO Cushion phiên bản cải tiến</h5>
+                        </p>
+    
+                        <small>Tuần lễ Water Week dành cho thành viên Laneige cùng vô vàn ưu đãi siêu hot để đồng </small>
+                        <small>hành với các tín đồ mê làm đẹp.</small><br>
+    
+                        <button type="button" class="btn sample-btn">
+                        <a class="pagebuilder-button-secondary" target="" data-link-type="default" data-element="link" data-pb-style="F8WUBF9" style="min-width: 144px;">
+                            <span data-element="link_text">Khám phá ngay</span></a>
+                        </button>
+                    </div>
+                </div>
+
+                <hr style="width: 100%; margin-left: 24px;">
+          </div>
+
+          <!-- Product list-->
+            <!--item 1-->
+            <div class="container">
+                <div class="recommendations-product text-center mt-4">
+                    <p>
+                        <strong>
+                            <span style="font-size: 34px; font-weight: 550;">BEST SELLERS</span>
+                        </strong>
+                    </p>
+                    <p style="font-size: 14px;">Top 5 sản phẩm nhà LANEIGE được yêu thích và bán chạy nhất !</p>
+                </div>
+            </div>
+            <section class="container">
+                <div class="swiper mySwiper" >
+                    <div class="swiper-wrapper content">
+            
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="image">
+                                   <a href="#">
+                                       <img src="../image/products/220424_final_new_neo_mett_pdp_thumbnail_01_11_1_.jpg" alt="phần nền">
+                                   </a>
+                                </div>
+                              </div>
+                              <div class="products-detail">
+                                  <div class="product-name">
+                                      <span>Phấn Nước Cho Lớp Nền Mịn Lì Laneige Neo Cushion Matte 15g*2 </span>
+                                  </div>
+                                  <div class="product-price">
+                                      <span class="discount-label"></span>
+                                      <span class="price-old"></span>
+                                      <span class="price-current">1.050.000 ₫</span>
+                                  </div>
+                              </div>
+                          </div>
+            
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                              <div class="image">
+                                 <a href="#">
+                                     <img src="../image/products/230314_final_sg_water-bank-blue-hyaluronic-cream-for-normal-to-dry-skin_thumbnail_1000x1000_8.webp" alt="">
+                                 </a>
+                              </div>
+                            </div>
+                            <div class="products-detail">
+                                <div class="product-name">
+                                    <span>Kem Dưỡng Ẩm Cho Da Thường Và Da Khô Laneige Water Bank Blue HA Cream Dry 50ml </span>
+                                </div>
+                                <div class="product-price have-discount-label">
+                                    <span class="discount-label">15%</span>
+                                    <span class="price-old">1.000.000 ₫</span>
+                                    <span class="price-current">850.000 ₫</span>
+                                </div>
+                            </div>
+                        </div>
+            
+                          <div class="swiper-slide card">
+                            <div class="card-content">
+                              <div class="image">
+                                 <a href="#">
+                                     <img src="../image/products/radian-c_cream_mc.webp" alt="">
+                                 </a>
+                              </div>
+                            </div>
+                            <div class="products-detail">
+                                <div class="product-name">
+                                    <span>Kem Dưỡng Sáng Và Làm Mờ Thâm Sạm Laneige Radian-C Cream 50ml </span>
+                                </div>
+                                <div class="product-price have-discount-label">
+                                    <span class="discount-label">15%</span>
+                                    <span class="price-old">1.200.000 ₫</span>
+                                    <span class="price-current">1.020.000 ₫</span>
+                                </div>
+                            </div>
+                          </div>
+            
+                          <div class="swiper-slide card">
+                              <div class="card-content">
+                                <div class="flags">
+                                  <span class="best">best</span>
+                                </div>
+                                <div class="image">
+                                  <a href="#">
+                                      <img src="../image/products/20210127_final_lip-sleeping-mask_pdp_thumbnail_03_pc_1.jpg" alt="Mặt nạ ngủ dưỡng môi">
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="products-detail">
+                                  <div class="product-name">
+                                      <span>Mặt Nạ Ngủ Dưỡng Môi Laneige Lip Sleeping Mask EX 20g </span>
+                                  </div>
+                                  <div class="product-price have-discount-label">
+                                      <span class="discount-label">15%</span>
+                                      <span class="price-old">500.000 ₫</span>
+                                      <span class="price-current">425.000 ₫</span>
+                                  </div>
+                              </div>
+                          </div>
+ 
+                      </div>
+                  </div>
+                </div>
+            
+            </section>
+
+            <!--item 2-->
+            <div class="container">
+                <div class="recommendations-product text-center mt-4">
+                    <p>
+                        <strong>
+                            <span style="font-size: 34px; font-weight: 550;">SẢN PHẨM MỚI</span>
+                        </strong>
+                    </p>
+                    <p style="font-size: 14px;">Chào đón các siêu phẩm dưỡng da và trang điểm mới nhất của nhà LANEIGE !</p>
+                </div>
+            </div>
+            <section class="container products-list">
+                <div class="swiper mySwiper swiper-btn" >
+                    <div class="swiper-wrapper content">
+            
+                          <div class="swiper-slide card">
+                              <div class="card-content">
+                                <div class="image">
+                                   <a href="#">
+                                       <img src="../image/products/5_22_1.jpg" alt="Kem dưỡng">
+                                   </a>
+                                </div>
+                              </div>
+                              <div class="products-detail">
+                                  <div class="product-name">
+                                      <span>Kem Dưỡng Chống Lão Hóa Laneige Perfect Renew 3X Cream 50ml </span>
+                                  </div>
+                                  <div class="product-price">
+                                      <span class="discount-label">10%</span>
+                                      <span class="price-old">1.750.000 ₫</span>
+                                      <span class="price-current">1.575.000 ₫</span>
+                                  </div>
+                              </div>
+                          </div>
+            
+                          <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="flags flags-two-item">
+                                    <span class="new">New</span>
+                                    <span class="best">best</span>
+                                  </div>
+                              <div class="image">
+                                 <a href="#">
+                                     <img src="../image/products/3_21.jpg" alt="Tính chất chống lão hóa">
+                                 </a>
+                              </div>
+                            </div>
+                            <div class="products-detail">
+                                <div class="product-name">
+                                    <span>Tinh Chất Chống Lão Hóa Laneige Perfect Renew 3X Signature Serum 40ml </span>
+                                </div>
+                                <div class="product-price have-discount-label">
+                                    <span class="discount-label">15%</span>
+                                    <span class="price-old">1.000.000 ₫</span>
+                                    <span class="price-current">850.000 ₫</span>
+                                </div>
+                            </div>
+                         </div>
+            
+                          <div class="swiper-slide card">
+                            <div class="card-content">
+                              <div class="image">
+                                 <a href="#">
+                                     <img src="../image/products/3x_refiner_1.png" alt="">
+                                 </a>
+                              </div>
+                            </div>
+                            <div class="products-detail">
+                                <div class="product-name">
+                                    <span>Nước Cân Bằng Chống Lão Hóa Laneige Perfect Renew 3X Skin Refiner 150ml </span>
+                                </div>
+                                <div class="product-price have-discount-label">
+                                    <span class="discount-label">15%</span>
+                                    <span class="price-old">1.200.000 ₫</span>
+                                    <span class="price-current">1.020.000 ₫</span>
+                                </div>
+                            </div>
+                          </div>
+            
+                          <div class="swiper-slide card">
+                              <div class="card-content">
+                                <div class="flags flags-two-item ">
+                                  <span class="new">New</span>
+                                  <span class="best">best</span>
+                                </div>
+                                <div class="image">
+                                  <a href="#">
+                                      <img src="../image/products/9._square_1_1_.webp" alt="">
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="products-detail">
+                                  <div class="product-name">
+                                      <span>Sữa Dưỡng Chống Lão Hóa Laneige Perfect Renew 3X Emulsion 130ml </span>
+                                  </div>
+                                  <div class="product-price have-discount-label">
+                                      <span class="discount-label">15%</span>
+                                      <span class="price-old">500.000 ₫</span>
+                                      <span class="price-current">425.000 ₫</span>
+                                  </div>
+                              </div>
+                          </div>
+            
+                          <div class="swiper-slide card">
+                            <div class="card-content">
+                              <div class="image">
+                                 <a href="#">
+                                     <img src="../image/products/ads_6_.webp" alt="phần nền">
+                                 </a>
+                              </div>
+                            </div>
+                            <div class="products-detail">
+                                <div class="product-name">
+                                    <span>[Phiên bản giới hạn] Mặt Nạ Ngủ Dưỡng Môi Laneige Lip Sleeping Mask EX Pink Lemon Swirl 20g </span>
+                                </div>
+                                <div class="product-price">
+                                    <span class="discount-label"></span>
+                                    <span class="price-old"></span>
+                                    <span class="price-current">1.050.000 ₫</span>
+                                </div>
+                            </div>
+                        </div>
+
+                         <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="flags flags-two-item ">
+                                    <span class="new">New</span>
+                                    <span class="best">best</span>
+                                  </div>
+                                <div class="image">
+                                <a href="#">
+                                    <img src="../image/products/4_19_3.webp" alt="kem dưỡng ngăn ngừa lão hóa">
+                                </a>
+                                </div>
+                        </div>
+                        <div class="products-detail">
+                                <div class="product-name">
+                                    <span>Kem Dưỡng Ngăn Ngừa Lão Hóa Laneige Perfect Renew Youth Retinol 30ml </span>
+                                </div>
+                                <div class="product-price have-discount-label">
+                                    <span class="discount-label">15%</span>
+                                    <span class="price-old">1.200.000 ₫</span>
+                                    <span class="price-current">1.020.000 ₫</span>
+                                </div>
+                        </div>
+                        </div>
+                        
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="image">
+                                <a href="#">
+                                    <img src="../image/products/230112_final_neo-essential-blurring-finish-powder_pdp_thumbnail_01_1_1_.webp" alt="Phấn phủ dạng bột">
+                                </a>
+                                </div>
+                        </div>
+                        <div class="products-detail">
+                                <div class="product-name">
+                                    <span>Phấn Phủ Dạng Bột Kiềm Dầu Laneige NEO Essential Blurring Finish Powder 7g </span>
+                                </div>
+                                <div class="product-price have-discount-label">
+                                    <span class="discount-label">15%</span>
+                                    <span class="price-old">1.200.000 ₫</span>
+                                    <span class="price-current">1.020.000 ₫</span>
+                                </div>
+                        </div>
+                        </div>
+
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="flags flags-two-item">
+                                    <span class="new">New</span>
+                                    <span class="best">best</span>
+                                  </div>
+                                <div class="image">
+                                <a href="#">
+                                    <img src="../image/products/skin_veil_green_1_1__1.webp" alt="Kem lót dưỡng ẩm và Nâng tông">
+                                </a>
+                                </div>
+                        </div>
+                        <div class="products-detail">
+                                <div class="product-name">
+                                    <span>Kem Lót Dưỡng Ẩm Và Nâng Tông Laneige Skin Veil Base_EX No.40 Pure Violet 30ml </span>
+                                </div>
+                                <div class="product-price have-discount-label">
+                                    <span class="discount-label">15%</span>
+                                    <span class="price-old">1.200.000 ₫</span>
+                                    <span class="price-current">1.020.000 ₫</span>
+                                </div>
+                        </div>
+
+
+                        </div>
+
+
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="image">
+                                <a href="#">
+                                    <img src="../image/products/skin_veil_violet_2_1_.jpg" alt="Kem lót dưỡng ẩm và Nâng tông">
+                                </a>
+                                </div>
+                        </div>
+                        <div class="products-detail">
+                                <div class="product-name">
+                                    <span>Kem Lót Dưỡng Ẩm Và Nâng Tông Laneige Skin Veil Base_EX No.60 Mint Green 30ml </span>
+                                </div>
+                                <div class="product-price have-discount-label">
+                                    <span class="discount-label">15%</span>
+                                    <span class="price-old">1.200.000 ₫</span>
+                                    <span class="price-current">1.020.000 ₫</span>
+                                </div>
+                        </div>
+
+                        
+                        </div>
+                    </div>
+                 
+                </div>
+            
+            
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
+            </section>
+
+
+            <!--Imgae body-->
+            <div class="images-desktop">
+                    <a href="#">
+                        <img class="image-desktop-item" src="../image/desktop-image/LEAFLET_3_ITEMS-02_1__1.webp" alt="desktop-image" >
+                    </a>
+                    <a href="#">
+                        <img class="image-desktop-item" src="../image/desktop-image/PC-Branding-2.webp" alt="desktop-image">
+                    </a>
+
+            </div>
+
+            <!-- Footer-->
+            <footer>
+                    <div class="container">
+                        <div class="d-flex justify-content-between">
+                                <div class="footer-header">
+                                    <ul>
+                                        <li><a href="">Điều khoản & điều kiện</a></li>
+                                        <li><a href="">Điều kiện sử dụng</a></li>
+                                        <li><a href="">Chính sách bảo mật</a></li>
+                                        <li><a href="">FAQ</a></li>
+                                        <li><a href="">Thanh toán và giao hàng</a></li>
+                                    </ul>
+                                </div>
+                           
+                                <div class="footer-icon">
+                                    <ul>
+                                        <li>
+                                            <a href=""> <i class="fab fa-instagram"></i> </a>
+                                        </li>
+                                        <li>
+                                            <a href="">  <i class="fab fa-facebook"></i></a>
+                                        </li>
+                                      
+                                        <li>
+                                            <a href=""><i class="fab fa-youtube"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                        </div>
+
+                        <div class="footer-info">
+                            <p>
+                                <strong> CÔNG TY TNHH AMOREPACIFIC VIỆT NAM<br>Văn phòng:</strong>
+                                 Lầu 4A, Tòa nhà Vincom, 72 Lê Thánh Tôn, Phường Bến Nghé, Quận 1, Thành phố Hồ Chí Minh
+                                 <strong><br> Đơn vị đóng gói:</strong> 
+                                 Công ty TNHH YCH Protrade
+                                 <strong><br> Đơn vị giao hàng:</strong> 
+                                 Công ty CPDV Giao Hàng Nhanh
+                                 <strong><br> Thời gian làm việc: </strong>
+                                  Thứ 2 – Thứ 6. Từ 9h00 đến 17h00<br>
+                                  <strong>Hotline:</strong>  0988 998 450<br>
+                                  <strong>Fanpage:</strong> fb.com/vnlaneige<br>
+                                  <strong>Email:</strong> laneige@vn.amorepacific.com<br>
+                                  <strong>MSDN:</strong> 0309984165 - Ngày cấp: 05/05/2020, được sửa đổi lần cuối ngày 16/02/2023
+                            </p>
+                            <p>
+                                <img src="../image/logo-footer/government.png" alt="..">
+                            </p>
+
+                            <p>
+                                <span>© AMOREPACIFIC ALL RIGHTS RESERVED.</span>
+                            </p>
+                        </div>
+                    </div>
+            </footer>
+          
+    </div>
+    
+
+    <script src="../js/homeProductItem.js"></script>
+</body>
+</html>
